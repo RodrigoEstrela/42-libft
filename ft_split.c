@@ -18,7 +18,7 @@ static	char	*ft_strndup(const char *s1, int start, int end)
 	size_t	i;
 
 	i = 0;
-	str = (char *)malloc(sizeof(*s1) * (ft_strlen(s1) + 1));
+	str = (char *)malloc(sizeof(*s1) * (end - start + 1));
 	if (!str)
 		return (NULL);
 	while (s1[start] && start < end)
